@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de música</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+    .product-form, .filter-form, .results {
+      margin-bottom: 20px;
+    }
+    .product-list {
+      list-style: none;
+      padding: 0;
+    }
+    .product-item {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Simulador de Tienda de Música</h1>
+    <div class="product-form">
+      <h2>Agregar Álbum</h2>
+      <input type="text" id="nombre" placeholder="Nombre del álbum">
+      <input type="text" id="artista" placeholder="Nombre del artista">
+      <input type="number" id="precio" placeholder="Precio del álbum">
+      <input type="number" id="cantidad" placeholder="Cantidad de álbumes">
+      <button id="agregar">Agregar Álbum</button>
+      
+    </div>
+    <div class="filter-form">
+      <h2>Filtrar Álbumes</h2>
+      <input type="text" id="filtro-nombre" placeholder="Filtrar por nombre de álbum">
+      <button id="filtrar-nombre">Filtrar por Nombre</button>
+      <input type="text" id="filtro-artista" placeholder="Filtrar por nombre de artista">
+      <button id="filtrar-artista">Filtrar por Artista</button>
+    </div>
+    <div class="results">
+      <h2>Resultados</h2>
+      <button id="mostrar-todos">Mostrar/Ocultar</button>
+      <ul id="lista-albumes" class="product-list"></ul>
+      <p id="total-compra"></p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
